@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="feignApi" />
+        <module name="producer" />
+        <module name="common" />
+        <module name="consumer" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="1.8" />
+      <module name="consumer" target="1.8" />
+      <module name="feignApi" target="1.8" />
+      <module name="producer" target="1.8" />
+      <module name="youxin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="common" options="-parameters" />
+      <module name="consumer" options="" />
+      <module name="feignApi" options="-parameters" />
+      <module name="producer" options="" />
+      <module name="youxin" options="" />
+    </option>
+  </component>
+</project>
